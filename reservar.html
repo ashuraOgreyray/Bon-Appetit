@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva tu mesa en BonAppetit, restaurante de cocina mexicana contemporánea en Texcoco, Estado de México.">
+    <meta name="theme-color" content="#696D56">
+
+    <title>Reservación - BonAppetit</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservar.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="brand">
+            <a href="index.html" aria-label="BonAppetit, ir al inicio">
+                <img
+                    id="logotipo"
+                    src="img/prueba.png"
+                    alt="Logotipo de BonAppetit">
+            </a>
+        </div>
+
+        <nav class="nav-center" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <a
+                href="reservacion.html"
+                class="btn-reservar activo"
+                aria-current="page">
+                Reservar mesa
+            </a>
+        </div>
+
+    </header>
+
+    <main class="reservacion-page">
+
+        <section class="reservacion-hero">
+            <div class="reservacion-hero-content">
+                <h1>Reserva tu mesa</h1>
+                <p>Completa el formulario y envíanos tu solicitud por WhatsApp para confirmar tu reservación.</p>
+            </div>
+        </section>
+
+        <section class="reservacion-form-section">
+
+            <div class="form-container">
+
+                <form class="reserva-form" id="reservaForm">
+
+                    <div class="form-section-title">
+                        <h2>Tus datos</h2>
+                        <div class="title-line"></div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Ej. Leonardo Manuel"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (WhatsApp) *</label>
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="Ej. 55 7470 8613"
+                                autocomplete="tel"
+                                required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico (opcional)</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email">
+                    </div>
+
+                    <div class="form-section-title">
+                        <h2>Detalles de la reservación</h2>
+                        <div class="title-line"></div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="fecha">Fecha *</label>
+                            <input
+                                type="date"
+                                id="fecha"
+                                name="fecha"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora">Hora *</label>
+                            <select id="hora" name="hora" required>
+                                <option value="">Selecciona una hora</option>
+                                <optgroup label="Horario disponible">
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personas">Número de personas *</label>
+                        <select id="personas" name="personas" required>
+                            <option value="">Selecciona el número de personas</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="7+">7 o más personas (evento privado)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-section-title">
+                        <h2>Información adicional</h2>
+                        <div class="title-line"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ocasion">Ocasión especial (opcional)</label>
+                        <select id="ocasion" name="ocasion">
+                            <option value="">Ninguna en particular</option>
+                            <option value="cumpleaños">Cumpleaños</option>
+                            <option value="aniversario">Aniversario</option>
+                            <option value="negocios">Reunión de negocios</option>
+                            <option value="celebracion">Celebración</option>
+                            <option value="cita">Cita romántica</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Alergias, restricciones o comentarios especiales</label>
+                        <textarea
+                            id="comentarios"
+                            name="comentarios"
+                            rows="4"
+                            placeholder="Ej. Soy alérgico a los mariscos, necesito una silla para bebé, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">
+                        Confirmar reservación
+                    </button>
+
+                </form>
+
+                <aside class="reservacion-info" aria-label="Información del restaurante">
+
+                    <div class="info-card">
+                        <h3>¿Prefieres reservar por teléfono?</h3>
+                        <p>Llámanos y con gusto te ayudamos.</p>
+                        <a href="tel:+525574708613" class="info-link">
+                            +52 55 7470 8613
+                        </a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>¿Prefieres WhatsApp?</h3>
+                        <p>Escríbenos directamente para solicitar tu reservación.</p>
+                        <a
+                            href="https://wa.me/525574708613"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="info-link whatsapp-link">
+                            Enviar mensaje
+                        </a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Horarios de atención</h3>
+                        <ul class="horarios-list">
+                            <li><strong>Lunes a viernes:</strong> 12:00 - 18:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Ubicación</h3>
+                        <p>Texcoco, Estado de México.</p>
+                        <a href="#mapa" class="info-link">Ver en el mapa</a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <section class="politicas-section">
+
+            <div class="politicas-container">
+
+                <h2>Políticas de reservación</h2>
+
+                <div class="politicas-grid">
+
+                    <div class="politica-item">
+                        <div class="politica-icon" aria-hidden="true">🕒</div>
+                        <h3>Puntualidad</h3>
+                        <p>Tu mesa se mantendrá durante 15 minutos después de la hora reservada.</p>
+                    </div>
+
+                    <div class="politica-item">
+                        <div class="politica-icon" aria-hidden="true">👥</div>
+                        <h3>Grupos grandes</h3>
+                        <p>Para grupos de más de 6 personas, contáctanos directamente para organizar tu evento.</p>
+                    </div>
+
+                    <div class="politica-item">
+                        <div class="politica-icon" aria-hidden="true">📅</div>
+                        <h3>Cancelaciones</h3>
+                        <p>Cancela con al menos 2 horas de anticipación para liberar tu mesa.</p>
+                    </div>
+
+                    <div class="politica-item">
+                        <div class="politica-icon" aria-hidden="true">✅</div>
+                        <h3>Confirmación</h3>
+                        <p>Te responderemos por WhatsApp para confirmar la disponibilidad de tu mesa.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="mapa-section" id="mapa">
+            <div class="politicas-container">
+                <h2>Encuéntranos</h2>
+                <p>Visítanos en Texcoco, Estado de México.</p>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Texcoco%2C%20Estado%20de%20Mexico"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="info-link">
+                    Abrir ubicación en Google Maps
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="reservar.js"></script>
+
+</body>
+
+</html>

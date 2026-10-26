@@ -1,0 +1,443 @@
+.reservacion-hero {
+    background-color: #696D56;
+    color: #EDE8D0;
+    text-align: center;
+    padding: 60px 20px 40px;
+    margin-top: 100px;
+}
+
+.reservacion-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reservacion-hero h1 {
+    font-size: 42px;
+    margin: 0 0 15px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.reservacion-hero p {
+    font-size: 20px;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.reservacion-form-section {
+    padding: 60px 20px;
+    background-color: #FAFAF8;
+}
+
+.form-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.form-section-title {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.form-section-title h2 {
+    color: #696D56;
+    font-size: 24px;
+    margin: 0 0 8px;
+    line-height: 1.3;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background-color: #C65D3B;
+    border-radius: 2px;
+}
+
+.reserva-form {
+    min-width: 0;
+    background-color: #FFFFFF;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    min-width: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 2px solid #E0DDD0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 50px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+    opacity: 1;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #696D56;
+    box-shadow: 0 0 0 3px rgba(105, 109, 86, 0.18);
+}
+
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid #696D56;
+    outline-offset: 2px;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #C65D3B;
+    color: #FFFFFF;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.btn-enviar:hover {
+    background-color: #D4A574;
+    color: #1A1A1A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(198, 93, 59, 0.25);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.btn-enviar:disabled {
+    cursor: wait;
+    opacity: 0.75;
+    transform: none;
+    box-shadow: none;
+}
+
+.reservacion-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #696D56;
+}
+
+.info-card h3 {
+    color: #696D56;
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.4;
+}
+
+.info-card p {
+    color: #555555;
+    font-size: 15px;
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.info-link {
+    display: inline-block;
+    color: #A84427;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+.info-link:hover {
+    color: #696D56;
+    text-decoration: underline;
+}
+
+.whatsapp-link {
+    color: #168747;
+}
+
+.whatsapp-link:hover {
+    color: #116B3A;
+}
+
+.horarios-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horarios-list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.politicas-section {
+    background-color: #EDE8D0;
+    padding: 60px 20px;
+}
+
+.politicas-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.politicas-container h2 {
+    color: #696D56;
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 0 0 40px;
+}
+
+.politicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 25px;
+}
+
+.politica-item {
+    min-width: 0;
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.politica-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
+}
+
+.politica-icon {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.politica-item h3 {
+    color: #696D56;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+
+.politica-item p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mapa-section {
+    background-color: #FAFAF8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mapa-section .politicas-container h2 {
+    margin-bottom: 15px;
+}
+
+.mapa-section .politicas-container p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #C65D3B;
+    outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+    .reservacion-hero {
+        margin-top: 100px;
+    }
+
+    .form-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .reservacion-info {
+        order: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reservacion-hero {
+        padding: 40px 15px 30px;
+        margin-top: 80px;
+    }
+
+    .reservacion-hero h1 {
+        font-size: 32px;
+    }
+
+    .reservacion-hero p {
+        font-size: 16px;
+    }
+
+    .reservacion-form-section {
+        padding: 35px 15px;
+    }
+
+    .form-container {
+        gap: 25px;
+    }
+
+    .reserva-form {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+
+    .form-section-title h2 {
+        font-size: 21px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    .btn-enviar {
+        padding: 16px 12px;
+        font-size: 16px;
+    }
+
+    .reservacion-info {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .info-card {
+        padding: 22px;
+    }
+
+    .politicas-section {
+        padding: 40px 15px;
+    }
+
+    .politicas-container h2 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    .politicas-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .politica-item {
+        padding: 25px 20px;
+    }
+
+    .mapa-section {
+        padding: 35px 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .politica-item:hover,
+    .btn-enviar:hover {
+        transform: none;
+    }
+}
